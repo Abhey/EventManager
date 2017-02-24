@@ -1,5 +1,5 @@
 <HTML>
-<H1>README<H1>
+<H1>README</H1>
 
 This Application have three java files Client.java, Server.java 
 and BigServer.java .
