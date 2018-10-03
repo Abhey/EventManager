@@ -140,7 +140,6 @@ public class Client extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jLabel38 = new javax.swing.JLabel();
         EBPCB4 = new javax.swing.JComboBox();
-        EBPD = new com.toedter.calendar.JDateChooser();
         jLabel45 = new javax.swing.JLabel();
         EventManager = new javax.swing.JFrame();
         jLabel40 = new javax.swing.JLabel();
@@ -804,7 +803,7 @@ public class Client extends javax.swing.JFrame {
                         .addGroup(CordinatorLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(CordinatorLoginLayout.createSequentialGroup()
                                 .addGroup(CordinatorLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
+                                    .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
                                     .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
                                     .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
@@ -819,8 +818,7 @@ public class Client extends javax.swing.JFrame {
                                                     .addComponent(EBP1)
                                                     .addComponent(EBPCB1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                     .addComponent(EBPCB3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(EBPCB2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(EBPD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                                    .addComponent(EBPCB2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CordinatorLoginLayout.createSequentialGroup()
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(EBPCB4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -851,7 +849,7 @@ public class Client extends javax.swing.JFrame {
                     .addGroup(CordinatorLoginLayout.createSequentialGroup()
                         .addGap(202, 202, 202)
                         .addComponent(jLabel45)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(93, Short.MAX_VALUE))
         );
         CordinatorLoginLayout.setVerticalGroup(
             CordinatorLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -872,9 +870,7 @@ public class Client extends javax.swing.JFrame {
                                 .addComponent(EBP1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(11, 11, 11)
                                 .addComponent(EBPCB1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(61, 61, 61)
-                                .addComponent(EBPD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(EBPCB3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(EBPCB4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1235,7 +1231,7 @@ public class Client extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         try{
-            Socket sock=new Socket("127.0.0.1",8080);
+            Socket sock=new Socket(GetPropertiesValues.getIPAddress(),GetPropertiesValues.getPortNumber());
             BufferedReader recieve=new BufferedReader(new InputStreamReader(sock.getInputStream()));
             PrintWriter send=new PrintWriter(sock.getOutputStream());
             int Registration=Integer.parseInt(SRT1.getText());
@@ -2001,7 +1997,7 @@ public class Client extends javax.swing.JFrame {
             }
         });
     }
-
+    private com.toedter.calendar.JDateChooser EBPD;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox CRCB1;
     private javax.swing.JComboBox CRCB2;
@@ -2024,7 +2020,6 @@ public class Client extends javax.swing.JFrame {
     private javax.swing.JComboBox EBPCB2;
     private javax.swing.JComboBox EBPCB3;
     private javax.swing.JComboBox EBPCB4;
-    private com.toedter.calendar.JDateChooser EBPD;
     private javax.swing.JTextArea EBPTA1;
     private javax.swing.JTextArea EBPTA2;
     private javax.swing.JFrame EventManager;
