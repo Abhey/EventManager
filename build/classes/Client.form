@@ -1040,7 +1040,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jLabel32" pref="96" max="32767" attributes="0"/>
+                                      <Component id="jLabel32" max="32767" attributes="0"/>
                                       <Component id="jLabel34" pref="96" max="32767" attributes="0"/>
                                       <Component id="jLabel33" pref="96" max="32767" attributes="0"/>
                                       <Component id="jLabel37" pref="96" max="32767" attributes="0"/>
@@ -1057,7 +1057,6 @@
                                                       <Component id="EBPCB1" max="32767" attributes="0"/>
                                                       <Component id="EBPCB3" min="-2" pref="150" max="-2" attributes="0"/>
                                                       <Component id="EBPCB2" max="32767" attributes="0"/>
-                                                      <Component id="EBPD" alignment="0" max="32767" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
@@ -1105,7 +1104,7 @@
                           <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="93" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1129,9 +1128,7 @@
                                   <Component id="EBP1" min="-2" pref="27" max="-2" attributes="0"/>
                                   <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                                   <Component id="EBPCB1" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                                  <Component id="EBPD" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Component id="EBPCB3" min="-2" pref="30" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="EBPCB4" min="-2" pref="30" max="-2" attributes="0"/>
@@ -1372,8 +1369,6 @@
               </StringArray>
             </Property>
           </Properties>
-        </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="EBPD">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel45">
           <Properties>
